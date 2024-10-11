@@ -44,4 +44,4 @@ async def rps(ctx, user_choice: str):
     await ctx.send(f'You chose {user_choice}, I chose {bot_choice}. {result}')
 
 # Run the bot with your token
-bot.run('your_token_goes_here')
+bot.run('')
