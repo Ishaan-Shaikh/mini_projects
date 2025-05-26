@@ -1,3 +1,6 @@
-## Mine
+## Mini Projects 
 # Practice and Projects
-This is a test to earn YOLO badge
+1. Discord Bot
+2. Voice Powered Desktop Assistant
+3. YouTube Video to Audio Downloader
+4. e.t.c..(To-Do List)
