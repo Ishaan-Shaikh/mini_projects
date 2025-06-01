@@ -1,0 +1,4 @@
+# Replace 'x' with youtube video link
+# If using terminal, remove '!'
+
+!yt-dlp -x --audio-format mp3 x
