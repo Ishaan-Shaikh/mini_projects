@@ -1,7 +1,5 @@
 <<<<<<< HEAD
 "# Mine" 
-# YOLO Badge Test
-This is a test to earn YOLO badge
 =======
 ## Mini Projects 
 # Practice and Projects
