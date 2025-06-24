@@ -1,4 +1,3 @@
-=======
 ## Mini Projects 
 # Practice and Projects
 1. Discord Bot
