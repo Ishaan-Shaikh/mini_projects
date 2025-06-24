@@ -1,4 +1,3 @@
-"# Mine" 
 =======
 ## Mini Projects 
 # Practice and Projects
