@@ -1,3 +1,0 @@
-todo.py []
-matrix determinant, eigen vector and value []
-stack calculator []
