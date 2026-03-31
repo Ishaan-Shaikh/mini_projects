@@ -1,7 +1,7 @@
 import time
 import subprocess
 
-ALARAM_TIME = "19:55"
+ALARAM_TIME = "20:06"
 AUDIO_FILE = "/home/ren/Music/Dead Eyes - Promoting Sounds, Powfu, Ouse.flac"
 
 while True :
@@ -12,6 +12,7 @@ while True :
             "vlc",
             "--intf", "dummy",
             "--play-and-exit",
+            # "--no-video",
             AUDIO_FILE
         ])
         break
