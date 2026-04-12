@@ -1,24 +1,23 @@
 def clock_convert(time, ampm):
-    # time = 1:23
-    # ampm = pm
-    hr,min = time.split(":")
+    hr, min = time.split(":")
     hr = int(hr)
     min = int(min)
+    total_min = hr * 60 + min
 
-    total_min = int(hr)*60 + int(min)
+    # 12:xx AM -> 00:xx
+    if ampm == "am" and hr == 12:
+        thf = f"00:{min:02d}"
 
-    # thf -> 24 hr format time. e.g. 13:04
-    # If the time is AM and the hour is 12, convert hour to 00.
-    if ampm == "am" and hr == "12":
-        thf = f"00:{min}:"
-    
-    # If the time is between 1:00 AM and 12:59 PM, 24 hour time is same as 12 hour time.
-    if 60<= total_min <= 779:
+    # 1:00 AM - 11:59 AM: no change needed
+    elif ampm == "am" and 1 <= hr <= 11:
         thf = time
-    
-    # If the time is between 1:00 PM and 11:59 PM, we add 12 hours to input time.
-    if 60<= total_min <= 719 and ampm == "pm":
-        thf = f"{hr+12}:{min}"
-    
-    return thf
 
+    # 12:xx PM -> 12:xx (no change needed)
+    elif ampm == "pm" and hr == 12:
+        thf = time
+
+    # 1:00 PM - 11:59 PM: add 12 hours
+    elif ampm == "pm" and 1 <= hr <= 11:
+        thf = f"{hr + 12}:{min:02d}"
+
+    return thf

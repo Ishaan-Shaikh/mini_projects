@@ -3,8 +3,8 @@ import subprocess
 from clock_convert import clock_convert
 
 # twelve_hr_format -> time
-alarm_time_str = "3:37"  # DEFAULT TIME = 3:37 pm
-ampm = "pm"
+alarm_time_str = "12:22"  # DEFAULT TIME = 12:22 am
+ampm = "am"
 
 ALARM_TIME = clock_convert(alarm_time_str, ampm)
 AUDIO_FILE = "/home/ren/Music/Dead Eyes - Promoting Sounds, Powfu, Ouse.flac"
