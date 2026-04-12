@@ -2,7 +2,6 @@ def clock_convert(time, ampm):
     hr, min = time.split(":")
     hr = int(hr)
     min = int(min)
-    total_min = hr * 60 + min
 
     # 12:xx AM -> 00:xx
     if ampm == "am" and hr == 12:
