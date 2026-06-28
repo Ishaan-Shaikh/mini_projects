@@ -3,6 +3,10 @@ def clock_convert(time, ampm):
     hr = int(hr)
     min = int(min)
 
+    # Validate hour range
+    if hr < 1 or hr > 12:
+        raise ValueError(f"Invalid hour: {hr}. Hour must be between 1 and 12.")
+
     # 12:xx AM -> 00:xx
     if ampm == "am" and hr == 12:
         thf = f"00:{min:02d}"
